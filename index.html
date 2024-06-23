@@ -78,13 +78,42 @@
                         Raspberries, Blueberries</li>
                 </ul>
                 <p><data value="24">24</data>$</p>
-
-                <label for=""></label>
+                <a href="#">Add To Cart</a>
             </section>
 
         </section>
-        <section id="#form">
+        <section id="#game">
             <h2>Play to Win a Box of Macarons</h2>
+            <p>Click the button to generate two random numbers. <br>If both numbers are ones, you win!</p>
+            <span id="random1"></span>
+            <span id="random2"></span>
+            <p id="snakeEyesMsg"></p>
+            <button id="gamePlay">Play!</button>
+        </section>
+        <section id="#form">
+            <h2>What Would You Like to Tell Us</h2>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                <label for="name">Full Name<span class="required">*</span></label>
+                <input type="text" id="name" autocomplete="name" required aria-required="true">
+
+                <label for="email">Email<span class="required">*</span></label>
+		        <input type="email" id="email" autocomplete="email" required aria-required="true">
+
+                <label for="phone">Phone<span class="required">*</span></label>
+		        <input type="tel" id="phone" autocomplete="tel" required aria-required="true">
+
+                <label for="messages">Message<span class="required">*</span></label>
+	            <textarea id="messages" name="messages" required aria-required="true"></textarea>
+
+                <fieldset>
+                    <legend>Preferred Contact Method<span class="required">*</span></legend>
+                    <input type="radio" id="pref-phone" name="pref-contact" value="pref-phone" required aria-required="true">
+                    <label for="pref-phone">Phone</label>
+                    <input type="radio" id="pref-email" name="pref-contact" value="pref-email" required>
+                    <label for="pref-email">Email</label>
+                </fieldset>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+            </form>
         </section>
     </main>
     <footer>
