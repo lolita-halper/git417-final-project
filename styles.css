@@ -46,7 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /*---------- My CSS ----------*/
 :root {
     font-size: 1em;
@@ -66,9 +65,7 @@ table {
     --small-shadow: -0.25rem 0.25rem 0.5rem var(--med-gray);
     --filter-shadow: drop-shadow(-0.5rem 0.5rem 0.5rem var(--med-gray));
 }
-
 /* ----- SKIP LINK STYLES ----- */
-
 #skip {
     position: absolute;
     left: -10000px;
@@ -83,8 +80,7 @@ table {
     width: auto;
     height: auto;
   }
-/* ----- BODY STYLES ----- */
-
+/* ---------- BODY STYLES ---------- */
 * {
     margin: 0;
     padding: 0;
@@ -99,13 +95,39 @@ body {
     padding:0;
     overflow-x: hidden;
 }
-
-/* ----- HEADER STYLES ----- */
-
+/* ---------- HEADER STYLES ---------- */
+h1 {
+    margin-top: 0;
+    margin-bottom: 35px;
+    line-height:90%;
+    color: var(--white);
+    font-size: 340%;
+    font-family: 'Liu Jian Mao Cao', cursive; 
+}
+h2 {
+    font-size: 1.75em;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #ea8a8a;
+    content: "";
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
 #mainNavigation {
     visibility: hidden;
 }
-
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero.jpg);
     height: 100vh;
@@ -139,7 +161,7 @@ header {
 .mainNav li a:active {
     border-bottom: 2px solid #FF9494;
 }
-.mainLogo {
+.logo {
     height: 100px;
     width: auto;
     float: left;
@@ -159,14 +181,34 @@ header {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-h1 {
-    margin-top: 0;
-    margin-bottom: 35px;
-    line-height:90%;
-    color: var(--white);
-    font-size: 340%;
-    font-family: 'Liu Jian Mao Cao', cursive; 
+
+/*--------- STICKY NAV---------*/
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(242, 242, 242, 0.96);
+    -webkit-box-shadow: 0 2px 2px #e0e0e0;
+    box-shadow: 0 2px 2px #e0e0e0;
+    z-index: 9999;
 }
+
+.sticky .mainNav { margin-top: 18px;
+}
+.sticky .mainNav li a:link,
+.sticky .mainNav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+.sticky .logo {
+    display: none;
+}
+.sticky .logo-brown {
+    display: block;
+}
+/*--------- STICKY NAV END---------*/
+
 .button {
     background-color: var(--dk-pink);
     color: var(--white);
@@ -185,21 +227,89 @@ h1 {
     border: 1px solid var(--dk-pink);
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 620px 620px 1080px 620px 620px 80px;
+    gap: 1em;
+	margin: 0 auto;
+}
+#features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40% 60%;
+    padding: 40px;
+    background-color: var(--white);
+}
+#features h2, #features p {
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
+h2 + p {
+    max-width: 70ch;
+	margin: 0 auto;
+    padding-top: 6em;
+    font-size: 1.15em;
+}
+#days365, #ready20Min, #organic, #orderAnything {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 0 20px;
+}
+#days365 img.svgImg, #ready20Min img.svgImg, #organic img.svgImg, #orderAnything img.svgImg {
+    width: 60px;
+    height: auto;
+    align-items: center;
+    padding-bottom: 1em;
+    order: 1;
+}
+#days365 h3, #ready20Min h3, #organic h3, #orderAnything h3 {
+    order: 2;
+}
+#days365 p, #ready20Min p, #organic p, #orderAnything p {
+    order: 3;
+}
 
+#howTo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 80%;
+    padding: 40px;
+    background-color: var(--lt-pink);
+}
+#howTo h2 {
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
+#howTo p {
+    padding-right:2em;
+    padding-top:70px ;
+}
 
+#pastries {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25% 80% 80%;
+    padding: 40px;
+    background-color: var(--white);
+    
+}
+#pastries h2 {
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
 
+#game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 80%;
+    padding: 40px;
+    background-color: var(--lt-pink);
+}
 
-
-
-
-
-
-h2:after {
-    display: block;
-    height: 2px;
-    width: 100px;
-    background-color: #ea8a8a;
-    content: "";
-    margin: 0 auto;
-    margin-top: 30px;
+footer {
+    background-color: var(--dk-gray);
+    color: var(--lt-gray);
 }
