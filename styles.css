@@ -226,7 +226,8 @@ header {
     z-index: 9999;
 }
 
-.sticky .mainNav { margin-top: 18px;
+.sticky .mainNav { 
+    margin-top: 18px;
 }
 
 .sticky .mainNav li a:link,
