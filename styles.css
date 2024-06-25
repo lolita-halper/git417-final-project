@@ -293,7 +293,7 @@ h2 + p {
 }
 #howTo p {
     padding-right:2em;
-    padding-top:70px ;
+    padding-top:2px;
 }
 #howTo iframe {
     width: 560px;
