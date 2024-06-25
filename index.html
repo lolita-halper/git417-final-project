@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
+    <!--<button onclick="myFunction()">Toggle dark mode</button>-->
+
     <header id="home">
         <nav class="mainNav">
             <h2 id="mainNavigation">Main Navigation</h2>
@@ -37,10 +39,13 @@
         </section>
     </header>
     <main>
-        <section class="js--section-features" id="features">
+        <section class="js--section-features sectionWhite" id="features">
+            
+            <section class="features-sectHeader">
                 <h2>Always Fresh — Baked to Perfection</h2>
                 <p>Hello, we're a Baking Story, your bakery on the corner.&nbsp;We know you're always busy. No time for baking. So let us take care of that. Just browse our menu and order away!</p>
-            <section id="days365" class="icon-big">
+            </section>
+            <section id="days365">
                 <h3>365 days / year</h3>
                 <p>Never bake again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.</p>
                 <ion-icon name="calendar-clear-outline"></ion-icon>
@@ -50,27 +55,32 @@
                 <p>You're only twenty minutes away from your delicious and pastries delivered right to your home. We work with the best bakers in each town to ensure that you're 100% happy.</p>
                 <ion-icon name="stopwatch-outline"></ion-icon>
             </section>
-            <section id="organic" class="icon-big">
+            <section id="organic">
                 <h3>100% Organic</h3>
                 <p>All our ingredients are fresh, organic and local. Everything is baked the same day. Good for your health, the environment, and it also tastes better!</p>
                 <ion-icon name="heart-outline"></ion-icon>
             </section>
-            <section id="orderAnything" class="icon-big">
+            <section id="orderAnything">
                 <h3>Order Anything</h3>
                 <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious pastries. It's up to you!</p>
                 <ion-icon name="cart-outline"></ion-icon>
             </section>
+            
         </section>
 
-        <section id="howTo">
-            <h2>Perfect Macarons</h2>
-            <p>We are a Baking Story, your bakery on the corner. We know you are always busy. No time for baking. So let us take care of that. Just browse our menu and order away!<br><br>
-            We don't limit your creativity, meaning you can order whatever you like. You can also choose from our menu, which contains over 100 delicious goods. It's up to you!<br><br>
-            Here is a taste of how we make our macaroons to perfection. All our ingredients are fresh, organic, and local. Everything is baked on the same day. It is good for your health and the environment and tastes better!</p>
-            <iframe src="https://www.youtube.com/embed/HrnvOqMULUk?si=oZV3loWdM0WH0raQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section id="howTo" class="sectionPink">
+            <section class="howTo-sectHeader">
+                <h2>Perfect Macarons</h2>
+                <p>We are a Baking Story, your bakery on the corner. We know you are always busy. No time for baking. So let us take care of that. Just browse our menu and order away!<br>
+                We don't limit your creativity, meaning you can order whatever you like. You can also choose from our menu, which contains over 100 delicious goods. It's up to you!<br>
+                Here is a taste of how we make our macaroons to perfection. All our ingredients are fresh, organic, and local. Everything is baked on the same day. It is good for your health and the environment and tastes better!</p>
+           </section>
+           <section class="howTo-video">
+                <iframe src="https://www.youtube.com/embed/HrnvOqMULUk?si=oZV3loWdM0WH0raQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
         </section>
-
-        <section id="pastries">
+        
+        <section id="pastries" class="sectionWhite">
             <h2>Always Fresh — Order your Pastries</h2>
             
                 <section>
@@ -164,7 +174,7 @@
                 </section>
         </section>
 
-        <section id="game">
+        <section id="game" class="sectionPink">
             <h2>Play to Win a Box of Macarons</h2>
             <p>Click the button to generate two random numbers. <br>If both numbers are ones, you win!</p>
             <span id="random1"></span>
@@ -173,34 +183,38 @@
             <button id="gamePlay">Play!</button>
         </section>
 
-        <section id="form">
-            <h2>What Would You Like to Tell Us</h2>
-            <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
-                <label for="name">Full Name<span class="required">*</span></label>
-                <input type="text" id="name" autocomplete="name" required aria-required="true">
-            
-                <label for="email">Email<span class="required">*</span></label>
-                <input type="email" id="email" autocomplete="email" required aria-required="true">
-            
-                <label for="phone">Phone<span class="required">*</span></label>
-                <input type="tel" id="phone" autocomplete="tel" required aria-required="true">
+        <!--<section class="sectionWhite">-->
+        <section id="tellUs-form">
+            <section id="form">
+                <h2>What Would You Like to Tell Us</h2>
+                <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                    <label for="name">Full Name<span class="required">*</span></label>
+                    <input type="text" id="name" autocomplete="name" required aria-required="true">
+                
+                    <label for="email">Email<span class="required">*</span></label>
+                    <input type="email" id="email" autocomplete="email" required aria-required="true">
+                
+                    <label for="phone">Phone<span class="required">*</span></label>
+                    <input type="tel" id="phone" autocomplete="tel" required aria-required="true">
 
-                <label for="messages">Message<span class="required">*</span></label>
-	            <textarea id="messages" name="messages" required aria-required="true"></textarea>
+                    <label for="messages">Message<span class="required">*</span></label>
+                    <textarea id="messages" name="messages" required aria-required="true"></textarea>
 
-                <fieldset>
-                    <legend>Preferred Contact Method<span class="required">*</span></legend>
-                    <input type="radio" id="pref-phone" name="pref-contact" value="pref-phone" required aria-required="true">
-                    <label for="pref-phone">Phone</label>
-                    <input type="radio" id="pref-email" name="pref-contact" value="pref-email" required>
-                    <label for="pref-email">Email</label>
-                </fieldset>
-                <input type="submit" name="submit" id="submit" value="Submit">
-            </form>
+                    <fieldset>
+                        <legend>Preferred Contact Method<span class="required">*</span></legend>
+                        <input type="radio" id="pref-phone" name="pref-contact" value="pref-phone" required aria-required="true">
+                        <label for="pref-phone">Phone</label>
+                        <input type="radio" id="pref-email" name="pref-contact" value="pref-email" required>
+                        <label for="pref-email">Email</label>
+                    </fieldset>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </form>
+            </section>
         </section>
+
     </main>
     <footer>
-        <section id="footer">
+        <section id="footer" class="sectionWhite">
             <section id="address">
                 <h3>Contact Us</h3>
                     <p>625 Baking St., San Diego, CA</p>
@@ -218,13 +232,13 @@
             <small>This website was created for A Baking Story by Lolita Halper.<br>Copyrigh © 2024 by A Baking Story. All rights reserved.</small>
         </section>
     </footer>
+
+
     
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/script2.js"></script>
     <script src="js/script.js"></script>
-    
 </body>
 </html>
