@@ -172,7 +172,12 @@ ion-icon {
 .sectionPink {
     background-color: var(--lt-pink);
 }
+
 .sectionWhite {
+    background-color: var(--white);
+}
+
+.sectionBrown {
     background-color: var(--brown);
 }
 
@@ -382,7 +387,6 @@ h2 + p {
     grid-template-rows: 1fr 3fr 3fr;
     row-gap: 30px;
     padding: 40px;
-    background-color: var(--brown);
 }
 
 #pastries h2 {
@@ -457,7 +461,6 @@ span {
     grid-template-rows: 25% 2fr;
     grid-template-columns: 1fr;
     padding: 40px;
-    background-color: var(--brown);
 }
 #form {
     align-content: flex-end;
@@ -543,7 +546,6 @@ input, label, fieldset{
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 40px;
-    background-color: var(--brown);
     color: var(--lt-gray);
     margin: 0 auto;
     
