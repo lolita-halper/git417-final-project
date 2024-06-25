@@ -21,3 +21,51 @@ function game() {
 }
 
 document.getElementById("gamePlay").addEventListener("click", game);
+
+
+
+//Form
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("#form form");
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const phoneInput = document.getElementById("phone");
+    const messageInput = document.getElementById("messages");
+    const prefPhoneInput = document.getElementById("pref-phone");
+    const prefEmailInput = document.getElementById("pref-email");
+
+    form.addEventListener("submit", function(event) {
+        let isValid = true;
+
+        if (nameInput.value.trim() === "") {
+            isValid = false;
+            alert("Full Name is required.");
+        }
+
+        if (emailInput.value.trim() === "") {
+            isValid = false;
+            alert("Email is required.");
+        }
+
+        if (phoneInput.value.trim() === "") {
+            isValid = false;
+            alert("Phone is required.");
+        }
+
+        if (messageInput.value.trim() === "") {
+            isValid = false;
+            alert("Message is required.");
+        }
+
+        if (!prefPhoneInput.checked && !prefEmailInput.checked) {
+            isValid = false;
+            alert("Preferred Contact Method is required.");
+        }
+
+        if (!isValid) {
+            event.preventDefault();
+        } else {
+            alert("Form submitted successfully!");
+        }
+    });
+});
