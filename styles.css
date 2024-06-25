@@ -242,6 +242,9 @@ main {
     gap: 1em;
 	margin: 0 auto;
 }
+
+/*--------FEATURE SECTION START----------*/
+
 #features {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -280,12 +283,17 @@ h2 + p {
     order: 3;
 }
 
+/*--------FEATURE SECTION END----------*/
+
+/*--------HOW TO SECTION START----------*/
+
 #howTo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 1fr 3fr;
     padding: 40px;
     background-color: var(--lt-pink);
+    height: 520px;
 }
 #howTo h2 {
     grid-row: 1/2;
@@ -299,6 +307,10 @@ h2 + p {
     width: 560px;
     height: 315px;
 }
+/*--------HOW TO SECTION END----------*/
+
+/*--------PASTRIES SECTION START----------*/
+
 #pastries {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -311,6 +323,10 @@ h2 + p {
     grid-row: 1/2;
     grid-column: 1/5;
 }
+
+/*--------PASTRIES SECTION END----------*/
+
+/*--------GAME SECTION START----------*/
 
 #game {
     display: grid;
@@ -361,6 +377,10 @@ span {
     margin: 0 auto;
     margin-bottom: 20px;
 }
+
+/*--------GAME SECTION END----------*/
+
+/*--------FORM SECTION START----------*/
 
 #form {
 	display: grid;
@@ -440,6 +460,10 @@ input, label, fieldset{
       border-color: var(--dk-gray);
   }
 
+  /*--------FORM SECTION END----------*/
+
+  /*--------FOOTER SECTION START----------*/
+
 #footer {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -476,3 +500,4 @@ small {
     padding-left: 16px;
 }
 
+/*--------FOOTER SECTION END----------*/
