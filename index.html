@@ -5,11 +5,14 @@
     <meta name="Author" content="Lolita Halper">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Baking Story - Baking Pasteries for Every Occasion.</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
     <header id="home">
@@ -19,19 +22,19 @@
             <a href="#home"><img src="images/baking-logo-br.png" alt="a baking story logo" class="logo-brown"></a>
                 <ul class="mainNav js--mainNav">
                     <li><a href="#features">Our Story</a></li>
-                    <li><a href="#plans">Baking</a></li>
-                    <li><a href="#meals">Pastries</a></li>
+                    <li><a href="#howTo">Baking</a></li>
+                    <li><a href="#pastries">Pastries</a></li>
                     <li><a href="#form">Contact Us</a></li>
                 </ul>
         </nav>
         <section id="ourStoryHeader">
             <h1>Welcome to our story<br>about cupcakes and macarons</h1>
-            <a href="#" class="button" id="btnOrderPastries">Order Pastries</a>
-            <a href="" class="button" id="btnOurStory">Our Story</a>
+            <a href="#pastries" class="button" id="btnOrderPastries">Order Pastries</a>
+            <a href=#features class="button" id="btnOurStory">Our Story</a>
         </section>
     </header>
     <main>
-        <section id="features">
+        <section class="js--section-features" id="features">
                 <h2>Always Fresh — Baked to Perfection</h2>
                 <p>Hello, we're a Baking Story, your bakery on the corner.&nbsp;We know you're always busy. No time for baking. So let us take care of that. Just browse our menu and order away!</p>
             <section id="days365">
@@ -211,9 +214,13 @@
             <small>This website was created for A Baking Story by Lolita Halper.<br>Copyrigh © 2024 by A Baking Story. All rights reserved.</small>
         </section>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/script2.js"></script>
-    <script src="js/script1.js"></script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>
