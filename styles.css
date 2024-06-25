@@ -442,7 +442,7 @@ input, label, fieldset{
 
 #footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: var(--dk-gray);
     color: var(--lt-gray);
@@ -467,15 +467,8 @@ small {
 #socialMedia {
     grid-row: 1/2;
     grid-column: 2/3;
-}
-#socialMedia li {
-    display: inline-block;
+    align-items:flex-start;
     margin-left: 40px;
-    list-style: none;
-}
-#socialMedia {
-    padding: 10px;
-	margin: 0 auto;
 }
 #socialMedia a {
     color: var(--lt-gray);
