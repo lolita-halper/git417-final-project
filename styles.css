@@ -323,6 +323,20 @@ h2 + p {
     order: 3;
 }
 
+ion-icon {
+    color: var(--dk-pink);
+    font-size: 4em;
+    --ionicon-stroke-width: 20px;
+    padding-bottom: 20px;
+}
+
+#socialMedia ion-icon {
+    color: var(--lt-gray);
+    font-size: 1.2em;
+    --ionicon-stroke-width: 20px;
+    padding-bottom: 20px;
+ }
+
 /*--------FEATURE SECTION END----------*/
 
 /*--------HOW TO SECTION START----------*/
