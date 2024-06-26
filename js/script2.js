@@ -86,20 +86,6 @@ $(document).ready(function() {
 });
 
 
-
-//Change Color - light and dark mode
-
-/*function myFunction() {
-    var element = document.body;
-    element.classList.toggle("mystyle");
- }
-
- function myFunction() {
-    var element = document.getElementById("myDIV");
-   element.classList.toggle("mystyle");
-  }*/
-
-
 function toggleBodyColor() {
     var element = document.body;
     element.classList.toggle("mystyle");

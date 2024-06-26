@@ -141,7 +141,7 @@ body {
     margin-left: 20px;
 }
 
-  /* ---------- DARK AND LIGHT MODE END ---------- */
+/* ---------- DARK AND LIGHT MODE END ---------- */
 
 /* ------------ HEADER STYLES START------------- */
 
@@ -386,7 +386,6 @@ h2 + p {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 40px;
-    background-color: var(--lt-pink);
 }
 
 #howTo h2, #howTo p {
@@ -444,7 +443,6 @@ iframe {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     padding: 40px;
-    background-color: var(--lt-pink);
 }
 
 #game h2, #game p {
@@ -609,7 +607,6 @@ input, label, fieldset{
     row-gap: 30px;
     padding: 40px;
     padding-left: 5%;
-    background-color: var(--lt-pink);
 }
 
 #locations h2 {
