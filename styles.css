@@ -404,6 +404,36 @@ iframe {
     grid-column: 1/5;
 }
 
+#pastries ion-icon, #pastries span {
+    grid-row: 1;
+    grid-column: 1/5;
+    display: flex;
+    margin: 0   auto;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--dk-pink);
+    font-size: 2.2em;
+    --ionicon-stroke-width: 20px;
+    padding-bottom: 10px;
+    padding-top: 100px;
+}
+
+#pastries span {
+    font-size: 1.5em;
+    margin-left: 55%;
+}
+
+.addCart {
+    margin-top: 20px;
+    background-color: var(--dk-pink);
+    border-radius: 1.5em;
+    width: fit-content;
+    border: 1px solid var(--dk-pink);
+    font-weight: 300;
+    padding: 5px 20px;
+    color: var(--white);
+}
+
 #pastries h3 {
     margin-bottom: 5px;
 }
