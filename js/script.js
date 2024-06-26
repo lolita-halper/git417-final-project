@@ -1,3 +1,5 @@
+// Macaron Game with random numbers
+
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -24,7 +26,7 @@ document.getElementById("gamePlay").addEventListener("click", game);
 
 
 
-//Form
+//Form for customer
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("#form form");
     const nameInput = document.getElementById("name");
@@ -71,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-/* STICKY NAVIGATION */
+// Sticky Navigation
 
 $(document).ready(function() {
     $('.js--section-features').waypoint(function(direction) {
@@ -85,7 +87,7 @@ $(document).ready(function() {
     });
 });
 
-
+// Change Color - light and dark mode for body element
 function toggleBodyColor() {
     var element = document.body;
     element.classList.toggle("mystyle");
@@ -99,6 +101,6 @@ function toggleDivColor() {
 
 // Function to call both toggle functions
 function toggleColors() {
-         toggleBodyColor();
+    toggleBodyColor();
          toggleDivColor();
 }
