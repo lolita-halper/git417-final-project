@@ -108,18 +108,6 @@ body {
     max-width: 1280px;
 }
 
-.sectionPink {
-    background-color: var(--lt-pink);
-}
-
-.sectionWhite {
-    background-color: var(--white);
-}
-
-.sectionBrown {
-    background-color: var(--brown);
-}
-
 /* ---------- DARK AND LIGHT MODE START ---------- */
 
 .mystyle {
@@ -195,16 +183,10 @@ ion-icon {
     padding-bottom: 20px;
 }
 
-#socialMedia ion-icon {
-    color: var(--lt-gray);
-    font-size: 1.2em;
-    --ionicon-stroke-width: 20px;
-    padding-bottom: 20px;
- }
-
 #mainNavigation {
     visibility: hidden;
     position: absolute;
+    font-size: 1px;
 }
 
 header {
@@ -635,7 +617,7 @@ input, label, fieldset{
 #footer {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     padding: 40px;
     color: var(--lt-gray);
     margin: 0 auto;
@@ -647,11 +629,13 @@ small {
     grid-column: 1/3;
     text-align: center;
     font-size: small;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 #footer h3 {
     visibility: hidden;
+    position: absolute;
+    font-size: 1px;
 }
 
 #address {
@@ -667,10 +651,12 @@ small {
     margin-left: 40px;
 }
 
-#socialMedia a {
+#socialMedia ion-icon {
     color: var(--lt-gray);
     font-size: 24px;
+    --ionicon-stroke-width: 20px;
+    padding-bottom: 20px;
     padding-left: 16px;
-}
+ }
 
 /*--------FOOTER SECTION END----------*/
