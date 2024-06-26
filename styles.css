@@ -512,7 +512,7 @@ span {
 #form {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 4fr;
     padding: 40px;
     background-color: var(--brown);
 }
@@ -522,16 +522,15 @@ span {
 }
 
 #formContact {
-    align-content: flex-end;
-	margin: 0 auto;
+    margin: 0 auto;
 	color: var(--white);
 	font-size: 1.1em;
-    max-width: 100%;
+    padding-right: 35%;
 }
 
 input, label, fieldset{
 	display: block;
-	width: 100%;
+	width: 300%;
 }
 
 .required{
@@ -557,14 +556,14 @@ input, label, fieldset{
       border: 1px solid #fff;
       padding: 0.5em 0 1em 0.5em;
       margin: 0.75em 0 0.25em 0;
-      width: 100%;
+      width: 300%;
       display: grid;
       grid-template-columns: 1fr 3fr 1fr 3fr;
   }
   
   input[type=submit]{
       padding: 0.75em;
-      width: 35%;
+      width: fit-content;
       height: auto;
       margin-left: 67%;
       color: #fff;
@@ -581,7 +580,7 @@ input, label, fieldset{
   }
   
   textarea{
-      width: 100%;
+      width: 300%;
       height: 5em;
       margin-bottom: 1em;
   }
