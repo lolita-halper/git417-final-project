@@ -404,13 +404,26 @@ iframe {
     grid-column: 1/5;
 }
 
+#pastries h3 {
+    margin-bottom: 5px;
+}
+
+#pastries h2, #pastries h3, #pastries h4, #pastries h5, #pastries li {
+    color: var(--white);
+}
+
+#pastries a {
+    color: var(--dk-pink);
+}
+
+/*--------PASTRIES SECTION END----------*/
+
+/*--------SHOP CART SECTION START----------*/
+
 #pastries ion-icon, #pastries span {
     grid-row: 1;
     grid-column: 1/5;
-    display: flex;
-    margin: 0   auto;
-    align-items: center;
-    justify-content: space-between;
+    margin: 0 auto;
     color: var(--dk-pink);
     font-size: 2.2em;
     --ionicon-stroke-width: 20px;
@@ -432,21 +445,16 @@ iframe {
     font-weight: 300;
     padding: 5px 20px;
     color: var(--white);
+    cursor: pointer;
+}
+.cartTab {
+    grid-row: 1;
+    grid-column:1/5 ;
+    width: 200px;
+    background-color: var(--dk-pink);
 }
 
-#pastries h3 {
-    margin-bottom: 5px;
-}
-
-#pastries h2, #pastries h3, #pastries h4, #pastries h5, #pastries li {
-    color: var(--white);
-}
-
-#pastries a {
-    color: var(--dk-pink);
-}
-
-/*--------PASTRIES SECTION END----------*/
+/*--------SHOP CART SECTION END----------*/
 
 /*--------GAME SECTION START----------*/
 
