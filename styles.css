@@ -129,6 +129,18 @@ body {
     box-sizing: border-box;
   }
 
+  button[onclick]{
+    width: fit-content;
+    color: #fff;
+    background-color: var(--dk-pink);
+    border-radius: 1.5em;
+    border: 1px solid var(--dk-pink);
+    font-weight: 400;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
   /* ---------- DARK AND LIGHT MODE END ---------- */
 
 /* ------------ HEADER STYLES START------------- */
@@ -590,7 +602,6 @@ input, label, fieldset{
 
 /*--------LOCATIONS SECTION START----------*/
 
-
 #locations {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -598,6 +609,7 @@ input, label, fieldset{
     row-gap: 30px;
     padding: 40px;
     padding-left: 5%;
+    background-color: var(--lt-pink);
 }
 
 #locations h2 {
@@ -619,11 +631,7 @@ input, label, fieldset{
 
 /*--------LOCATIONS SECTION END----------*/
 
-
-
-
-
-  /*--------FOOTER SECTION START----------*/
+/*--------FOOTER SECTION START----------*/
 
 #footer {
     display: grid;
@@ -632,6 +640,7 @@ input, label, fieldset{
     padding: 40px;
     color: var(--lt-gray);
     margin: 0 auto;
+    background-color: var(--brown);
     
 }
 
@@ -665,18 +674,4 @@ small {
     padding-left: 16px;
 }
 
-/*--------FOOTER SECTION END----------*//*--------CHANGE COLOR MODE LIGHT//DARK SECTION START----------*/
-
-button[onclick]{
-    width: fit-content;
-    color: #fff;
-    background-color: var(--dk-pink);
-    border-radius: 1.5em;
-    border: 1px solid var(--dk-pink);
-    font-weight: 400;
-    padding: 10px 20px;
-    margin: 0 auto;
-    margin-left: 20px;
-}
-
-/*--------CHANGE COLOR MODE LIGHT//DARK SECTION END----------*/
+/*--------FOOTER SECTION END----------*/
