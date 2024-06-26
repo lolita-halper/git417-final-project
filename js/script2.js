@@ -89,7 +89,30 @@ $(document).ready(function() {
 
 //Change Color - light and dark mode
 
-function myFunction() {
+/*function myFunction() {
     var element = document.body;
-    element.classList.toggle("dark-mode");
+    element.classList.toggle("mystyle");
  }
+
+ function myFunction() {
+    var element = document.getElementById("myDIV");
+   element.classList.toggle("mystyle");
+  }*/
+
+
+function toggleBodyColor() {
+    var element = document.body;
+    element.classList.toggle("mystyle");
+}
+
+// Change Color - light and dark mode for a specific element
+function toggleDivColor() {
+    var element = document.getElementById("myDIV");
+    element.classList.toggle("mystyle");
+}
+
+// Function to call both toggle functions
+function toggleColors() {
+         toggleBodyColor();
+         toggleDivColor();
+}

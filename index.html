@@ -18,17 +18,18 @@
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-    <button onclick="myFunction()">Toggle dark mode</button>
     <header id="home">
         <nav class="mainNav">
             <h2 id="mainNavigation">Main Navigation</h2>
-            <img src="images/baking-logo.png" alt="A Baking Story logo" class="logo">
+            
+            <a href="#home"><img src="images/baking-logo.png" alt="A Baking Story logo" class="logo"></a>
             <a href="#home"><img src="images/baking-logo-br.png" alt="a baking story logo" class="logo-brown"></a>
                 <ul class="mainNav js--mainNav">
                     <li><a href="#features">Our Story</a></li>
                     <li><a href="#howTo">Baking</a></li>
                     <li><a href="#pastries">Pastries</a></li>
                     <li><a href="#form">Contact Us</a></li>
+                    <button onclick="toggleColors()">Toggle Dark/Light Mode</button>
                 </ul>
         </nav>
         <section id="ourStoryHeader">
@@ -181,59 +182,13 @@
                 <span id="random1"></span>
                 <span id="random2"></span>
                 <p id="gameMsg"></p>
-                
             </section>
             <section class="gameBtn">
                 <button id="gamePlay">Play!</button>
             </section>
         </section>
 
-        <section id="locations" class="sectionBrown">
-                <h2>We Have Store Fronts at These Locations</h2>
-                    <section>
-                        <h3>CarlsBad</h3>
-                        <img src="images/carlsbad.jpg" alt="Carlsbad Location, CA">
-                        <h4>Open 7 - 7</h4>
-                        <ul>
-                            <li>Local Delivery</li>
-                            <li>info@abakingstory.com</li>
-                        </ul>
-                        <h5>Call 123-456-7890 ext 1</h5>
-                    </section>
-                    <section>
-                        <h3>Huntington Beach</h3>
-                        <img src="images/huntington_beach.jpg" alt="Huntington Beach Location, CA">
-                        <h4>Open 7 - 7</h4>
-                        <ul>
-                            <li>Local Delivery</li>
-                            <li>info@abakingstory.com</li>
-                        </ul>
-                        <h5>Call 123-456-7890 ext 2</h5>
-                    </section>
-                    <section>
-                        <h3>Pasadena</h3>
-                        <img src="images/pasadena.jpg" alt="Pasadena Location, CA">
-                        <h4>Open 7 - 7</h4>
-                        <ul>
-                            <li>Local Delivery</li>
-                            <li>info@abakingstory.com</li>
-                        </ul>
-                        <h5>Call 123-456-7890 ext 3</h5>
-                    </section>
-                    <section>
-                        <h3>Redondo Beach</h3>
-                        <img src="images/redondo_beach.jpg" alt="Redondo Beach Location. CA">
-                        <h4>Open 7 - 7</h4>
-                        <ul>
-                            <li>Local Delivery</li>
-                            <li>info@abakingstory.com</li>
-                        </ul>
-                        <h5>Call 123-456-7890 ext 4</h5>
-                    </section>
-        </section>
-
-       
-        <section id="tellUs-form">
+        <section id="tellUs-form" class="sectionBrown">
             <section id="form">
                 <h2>What Would You Like to Tell Us</h2>
                 <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
@@ -260,6 +215,50 @@
                 </form>
             </section>
         </section>
+
+        <section id="locations">
+            <h2>We Have a Store Front at These Locations</h2>
+                <section>
+                    <h3>Carlsbad</h3>
+                    <img src="images/carlsbad.jpg" alt="Carlsbad Location, CA">
+                    <h4>Open 7 - 7</h4>
+                    <ul>
+                        <li>Local Delivery</li>
+                        <li>info@abakingstory.com</li>
+                    </ul>
+                    <h5>Call 123-456-7890 ext 1</h5>
+                </section>
+                <section>
+                    <h3>Huntington Beach</h3>
+                    <img src="images/huntington_beach.jpg" alt="Huntington Beach Location, CA">
+                    <h4>Open 7 - 7</h4>
+                    <ul>
+                        <li>Local Delivery</li>
+                        <li>info@abakingstory.com</li>
+                    </ul>
+                    <h5>Call 123-456-7890 ext 2</h5>
+                </section>
+                <section>
+                    <h3>Pasadena</h3>
+                    <img src="images/pasadena.jpg" alt="Pasadena Location, CA">
+                    <h4>Open 7 - 7</h4>
+                    <ul>
+                        <li>Local Delivery</li>
+                        <li>info@abakingstory.com</li>
+                    </ul>
+                    <h5>Call 123-456-7890 ext 3</h5>
+                </section>
+                <section>
+                    <h3>Redondo Beach</h3>
+                    <img src="images/redondo_beach.jpg" alt="Redondo Beach Location. CA">
+                    <h4>Open 7 - 7</h4>
+                    <ul>
+                        <li>Local Delivery</li>
+                        <li>info@abakingstory.com</li>
+                    </ul>
+                    <h5>Call 123-456-7890 ext 4</h5>
+                </section>
+    </section>
 
     </main>
     <footer>
