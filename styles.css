@@ -378,6 +378,7 @@ h2 + p {
     grid-template-rows: 1fr 3fr 3fr;
     row-gap: 30px;
     padding: 40px;
+    padding-left: 5%;
 }
 
 #pastries h2 {
@@ -474,12 +475,14 @@ span {
 
 /*--------LOCATIONS SECTION START----------*/
 
+
 #locations {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr;
     row-gap: 30px;
     padding: 40px;
+    padding-left: 5%;
 }
 
 #locations h2 {
@@ -498,6 +501,10 @@ span {
 
 #locations a {
     color: var(--dk-pink);
+}
+
+#locations img {
+    width: 250px;
 }
 
 /*--------LOCATIONS SECTION END----------*/
