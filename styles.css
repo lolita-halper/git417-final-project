@@ -587,6 +587,31 @@ input, label, fieldset{
       padding: 10px 30px;
       margin-top: 20px;
   }
+
+  #success.hide{
+    display: none;
+  }
+  
+  #success.show{
+    display: block;
+  }
+
+  .message{
+    display: none;
+    color: orange;
+    font-size: 1.2em;
+    margin: 0.25em 0;
+    font-weight: bold;
+  }
+  
+  .error{
+    font-size: 1em;
+    display: block;
+  }
+  
+  .errorInput{
+    border: 1px solid orange;
+  }
   
   textarea{
       width: 300%;
