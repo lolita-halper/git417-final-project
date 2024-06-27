@@ -114,9 +114,17 @@ function toggleColors() {
 // Select all 'Add to Cart' buttons
 const addToCartButtons = document.querySelectorAll('.addCart');
 
-// Initialize the cart count
+// Initialize the cart count and total sum
 let cartCount = 0;
+let totalSum = 0;
 const cartCountDisplay = document.querySelector('#pastries span');
+const totalSumDisplay = document.querySelector('#total-sum');
+
+// Function to update cart display
+function updateCartDisplay() {
+    cartCountDisplay.textContent = cartCount;
+    totalSumDisplay.textContent = totalSum.toFixed(2); // Ensure total sum is formatted to two decimal places
+}
 
 // Add event listener to each 'Add to Cart' button
 addToCartButtons.forEach(button => {
@@ -127,7 +135,9 @@ addToCartButtons.forEach(button => {
 
         // Update cart count
         cartCount++;
+        totalSum += itemPrice;
         cartCountDisplay.textContent = cartCount;
+        updateCartDisplay();
 
     })
 });

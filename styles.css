@@ -429,7 +429,7 @@ iframe {
 }
 
 #cartItemCount {
-    
+ vertical-align: top;
 }
 
 #pastries span {
