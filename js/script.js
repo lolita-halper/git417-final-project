@@ -142,3 +142,23 @@ addToCartButtons.forEach(button => {
     })
 });
 
+// Select the "Remove One Item" button
+const removeOneItemButton = document.querySelector('.removeOneItem');
+
+// Add event listener to the "Remove One Item" button
+removeOneItemButton.addEventListener('click', () => {
+    // Ensure there is at least one item in the cart to remove
+    if (cartCount > 0) {
+        // Get the price of the last added item to remove
+        const lastAddedItemPrice = parseFloat(removeOneItemButton.getAttribute('data-last-price'));
+
+        // Update cart count and total sum
+        cartCount--;
+        totalSum -= lastAddedItemPrice;
+
+        // Update cart display
+        cartCountDisplay.textContent = cartCount;
+        updateCartDisplay();
+    }
+});
+

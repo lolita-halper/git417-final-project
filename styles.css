@@ -436,6 +436,10 @@ iframe {
     font-size: 1.5em;
     margin-left: 55%;
 }
+#total-sum {
+    font-weight: 400;
+    margin-right: 20px;
+}
 
 .addCart {
     grid-row: 1;
@@ -460,6 +464,17 @@ iframe {
     padding: 10px;
     color: var(--dk-pink);
     cursor: pointer;
+}
+
+.removeOneItem {
+    background-color: var(--dk-pink);
+    color: var(--white);
+    margin-left: 50px;
+    padding: 5px 5px;
+    border: 1px solid var(--dk-pink);
+    width: fit-content;
+    border-radius: 1.5em;
+
 }
 
 /*--------SHOP CART SECTION END----------*/
