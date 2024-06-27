@@ -87,6 +87,7 @@ $(document).ready(function() {
     });
 });
 
+
 // Change Color - light and dark mode for body element
 function toggleBodyColor() {
     var element = document.body;
@@ -103,7 +104,6 @@ function toggleDivColor() {
 function toggleColors() {
     toggleBodyColor();
     toggleDivColor();
-
 
 }
 

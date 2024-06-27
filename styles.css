@@ -432,6 +432,9 @@ iframe {
  vertical-align: top;
 }
 
+#cartItemsList {
+}
+
 #pastries span {
     font-size: 1.5em;
     margin-left: 55%;
