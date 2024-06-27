@@ -109,7 +109,7 @@ function toggleColors() {
 
 
 
-// Shopping Cart
+// Function for my Shopping Cart
 
 // Select all 'Add to Cart' buttons
 const addToCartButtons = document.querySelectorAll('.addCart');
@@ -131,3 +131,4 @@ addToCartButtons.forEach(button => {
 
     })
 });
+
