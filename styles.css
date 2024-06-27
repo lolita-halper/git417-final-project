@@ -257,13 +257,6 @@ header {
    
 }
 
-.logo-brown {
-    display: none;
-    height: 50px;
-    width: auto;
-    margin: 0 auto;
-    margin: 5px 80px;
-}
 
 #ourStoryHeader {
     position: absolute;
@@ -274,39 +267,6 @@ header {
 }
 
 /* ---------- NAV STYLES END---------- */
-
-/*----------- STICKY NAV START---------*/
-
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(242, 242, 242, 0.96);
-    -webkit-box-shadow: 0 2px 2px #e0e0e0;
-    box-shadow: 0 2px 2px #e0e0e0;
-    z-index: 9999;
-}
-
-.sticky .mainNav { 
-    margin-top: 18px;
-}
-
-.sticky .mainNav li a:link,
-.sticky .mainNav li a:visited {
-    padding: 16px 0;
-    color: #5D534A;
-}
-
-.sticky .logo {
-    display: none;
-}
-
-.sticky .logo-brown {
-    display: block;
-}
-
-/*--------- STICKY NAV END---------*/
 
 /*--------MAIN SECTION START----------*/
 
