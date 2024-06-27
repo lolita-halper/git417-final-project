@@ -102,7 +102,7 @@ function toggleDivColor() {
 // Function to call both toggle functions
 function toggleColors() {
     toggleBodyColor();
-         toggleDivColor();
+    toggleDivColor();
 
 
 }
@@ -111,81 +111,23 @@ function toggleColors() {
 
 // Shopping Cart
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Step 5: Declare an empty array to store products
-    let products = [];
-  
-    // Define the products
-    const productItems = [
-      {
-        name: "Cupcake",
-        flavor: "Chocolate",
-        frosting: "Mint Buttercream",
-        price: 24,
-        img: "images/cupcake-chocolate-mint.jpg"
-      }
-    ];
-  
-    // Reference to the cart count and cart list elements
-    const cartCount = document.querySelector("#pastries span");
-    const cartList = document.querySelector(".listCart");
-  
-    // Add event listener to the "Add to Cart" button
-    const addCartButtons = document.querySelectorAll(".addCart");
-    addCartButtons.forEach((button, index) => {
-      button.addEventListener("click", function () {
-        addToCart(productItems[index]);
-      });
-    });
-  
-    // Function to add a product to the cart
-    function addToCart(product) {
-      products.push(product);
-      updateCart();
-    }
-  
-    // Function to update the cart display
-    function updateCart() {
-      cartList.innerHTML = "";
-      products.forEach((product, index) => {
-        const productItem = document.createElement("div");
-        productItem.classList.add("cartItem");
-        productItem.innerHTML = `
-                  <h4>${product.name}</h4>
-                  <p>Flavor: ${product.flavor}</p>
-                  <p>Frosting: ${product.frosting}</p>
-                  <p>Price: $${product.price}/half doz</p>
-                  <button class="removeCart" data-index="${index}">Remove</button>
-              `;
-        cartList.appendChild(productItem);
-      });
-  
-      cartCount.textContent = products.length;
-      addRemoveEventListeners();
-    }
-  
-    // Function to add event listeners to the "Remove" buttons
-    function addRemoveEventListeners() {
-      const removeCartButtons = document.querySelectorAll(".removeCart");
-      removeCartButtons.forEach((button) => {
-        button.addEventListener("click", function () {
-          const index = this.getAttribute("data-index");
-          removeFromCart(index);
-        });
-      });
-    }
-  
-    // Function to remove a product from the cart
-    function removeFromCart(index) {
-      products.splice(index, 1);
-      updateCart();
-    }
-  
-    // Add event listener to the "Close" button
-    const closeButtons = document.querySelectorAll(".close");
-    closeButtons.forEach((button) => {
-      button.addEventListener("click", function () {
-        document.querySelector(".cartTab").classList.toggle("hidden");
-      });
-    });
-  });
+// Select all 'Add to Cart' buttons
+const addToCartButtons = document.querySelectorAll('.addCart');
+
+// Initialize the cart count
+let cartCount = 0;
+const cartCountDisplay = document.querySelector('#pastries span');
+
+// Add event listener to each 'Add to Cart' button
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Get item details from button's data attributes
+        const itemName = button.getAttribute('data-name');
+        const itemPrice = parseFloat(button.getAttribute('data-price'));
+
+        // Update cart count
+        cartCount++;
+        cartCountDisplay.textContent = cartCount;
+
+    })
+});

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Baking Story - Baking Pasteries for Every Occasion.</title>
      <!--For the sticky nav-->
-     <script src="js/jquery.waypoints.min.js" async></script>
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js" async></script>
+     <script src="js/jquery.waypoints.min.js"async></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"async></script>
      <!--For the icons-->
-     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" async></script>
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"async></script>
      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" async></script>
      <!--My written javascript file with async-->
     <script src="js/script.js" async></script>
@@ -77,7 +77,13 @@
         
         <section id="pastries">
             <h2>Always Fresh — Order your Pastries</h2>
-            <ion-icon name="cart-outline"></ion-icon><span>0</span>
+
+            <div id="cartIcon" class="addToCart">
+                <ion-icon name="cart-outline"></ion-icon><span id="cartItemCount">(0)</span>
+                <div id="cartItemsList"></div>
+                <strong>Total: $<span id="cartTotal">0.00</span></strong>
+            </div>
+
                 <section>
                     <h3>Chocolate / Mint</h3>
                     <img src="images/cupcake-chocolate-mint.jpg" alt="chocolate cupcake with mint frosting">
@@ -87,7 +93,7 @@
                         <li>Frosting: Mint Buttercream</li>
                     </ul>
                     <h5>$24/half doz</h5>
-                    <button class="addCart">Add to Cart</button>
+                    <button class="addCart" data-name="Chocolate Mint Cupcake" data-price="24">Add to Cart</button>
                 </section>
                 
                 <section>
@@ -99,7 +105,8 @@
                         <li>Frosting: Raspberry Whipped Cream</li>
                     </ul>
                     <h5>$24/half doz</h5>
-                    <button class="addCart">Add to Cart</button>
+                    <button class="addCart" data-name="Chocolate Mint Cupcake" data-price="24">Add to Cart</button>
+
                 </section>
                 <section>
                     <h3>Vanilla / Coffee</h3>
@@ -110,7 +117,7 @@
                         <li>Frosting: Vanilla-Coffee Buttercream</li>
                     </ul>
                     <h5>$24/half doz</h5>
-                    <button class="addCart">Add to Cart</button>
+                    <button class="addCart" data-name="Chocolate Mint Cupcake" data-price="24">Add to Cart</button>
                 </section>
                 <section>
                     <h3>Red Velvet / Vanilla</h3>
@@ -121,7 +128,7 @@
                         <li>Frosting: Vanilla Buttercream</li>
                     </ul>
                     <h5>$24/half doz</h5>
-                    <button class="addCart">Add to Cart</button>
+                    <button class="addCart" data-name="Chocolate Mint Cupcake" data-price="24">Add to Cart</button>
                 </section>
            
                 <section>
@@ -133,7 +140,7 @@
                         <li>Frosting: Strawberry</li>
                     </ul>
                     <h5>$24/half doz</h5>
-                    <button class="addCart">Add to Cart</button>
+                    <button class="addCart" data-name="Chocolate Mint Cupcake" data-price="24">Add to Cart</button>
                 </section>
                 <section>
                     <h3>Raspberry / Vanilla</h3>
@@ -144,7 +151,7 @@
                         <li>Frosting: Raspberry</li>
                     </ul>
                     <h5>$24/half doz</h5>
-                    <button class="addCart">Add to Cart</button>
+                    <button class="addCart" data-name="Chocolate Mint Cupcake" data-price="24">Add to Cart</button>
                 </section>
                 <section>
                     <h3>Chocolate / Nuts</h3>
@@ -155,7 +162,7 @@
                         <li>Frosting: Chocolate-Almonds</li>
                     </ul>
                     <h5>$24/half doz</h5>
-                    <button class="addCart">Add to Cart</button>
+                    <button class="addCart" data-name="Chocolate Mint Cupcake" data-price="24">Add to Cart</button>
                 </section>
                 <section>
                     <h3>Honey / Butter</h3>
@@ -166,7 +173,7 @@
                         <li>Frosting: Honey-Butter</li>
                     </ul>
                     <h5>$24/half doz</h5>
-                    <button class="addCart">Add to Cart</button>
+                    <button class="addCart" data-name="Chocolate Mint Cupcake" data-price="24">Add to Cart</button>
                 </section>
         </section>
 
@@ -273,6 +280,5 @@
         </section>
         <small>This website was created for A Baking Story by Lolita Halper.<br>Copyrigh © 2024 by A Baking Story. All rights reserved.</small>
     </footer>
-    
 </body>
 </html>

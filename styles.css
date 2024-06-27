@@ -420,15 +420,16 @@ iframe {
 
 /*--------SHOP CART SECTION START----------*/
 
-#pastries ion-icon, #pastries span {
+#pastries ion-icon {
     grid-row: 1;
-    grid-column: 1/5;
-    margin: 0 auto;
+    grid-column: 1;
     color: var(--dk-pink);
-    font-size: 2.2em;
+    font-size: 3em;
     --ionicon-stroke-width: 20px;
-    padding-bottom: 10px;
-    padding-top: 100px;
+}
+
+#cartItemCount {
+    
 }
 
 #pastries span {
@@ -437,6 +438,8 @@ iframe {
 }
 
 .addCart {
+    grid-row: 1;
+    grid-column: 1;
     margin-top: 20px;
     background-color: var(--dk-pink);
     border-radius: 1.5em;
@@ -447,11 +450,16 @@ iframe {
     color: var(--white);
     cursor: pointer;
 }
-.cartTab {
+.addToCart {
     grid-row: 1;
-    grid-column:1/5 ;
+    grid-column: 1;
+    border-radius: 1.5em;
     width: 200px;
-    background-color: var(--dk-pink);
+    border: 1px solid var(--dk-pink);
+    font-weight: 300;
+    padding: 10px;
+    color: var(--dk-pink);
+    cursor: pointer;
 }
 
 /*--------SHOP CART SECTION END----------*/
