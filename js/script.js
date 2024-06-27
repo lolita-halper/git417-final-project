@@ -26,51 +26,89 @@ document.getElementById("gamePlay").addEventListener("click", game);
 
 
 
-//Form for customer
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector("#form form");
-    const nameInput = document.getElementById("name");
-    const emailInput = document.getElementById("email");
-    const phoneInput = document.getElementById("phone");
-    const messageInput = document.getElementById("messages");
-    const prefPhoneInput = document.getElementById("pref-phone");
-    const prefEmailInput = document.getElementById("pref-email");
+//Form for customers
 
-    form.addEventListener("submit", function(event) {
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('formContact');
+    const successMessage = document.getElementById('success');
+    const formSub = document.getElementById('formSub');
+    
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        
+        // Clear previous error messages
+        document.querySelectorAll('.message').forEach(message => message.style.display = 'none');
+        document.querySelectorAll('input, textarea').forEach(input => input.classList.remove('errorInput'));
+        
         let isValid = true;
-
-        if (nameInput.value.trim() === "") {
+        
+        // Validate Full Name
+        const name = document.getElementById('name');
+        if (name.value.trim() === '') {
+            showError(name, 'Please enter your full name');
             isValid = false;
-            alert("Full Name is required.");
         }
-
-        if (emailInput.value.trim() === "") {
+        
+        // Validate Email
+        const email = document.getElementById('email');
+        if (!validateEmail(email.value.trim())) {
+            showError(email, 'Please enter a valid email address');
             isValid = false;
-            alert("Email is required.");
         }
-
-        if (phoneInput.value.trim() === "") {
+        
+        // Validate Phone
+        const phone = document.getElementById('phone');
+        if (phone.value.trim() === '') {
+            showError(phone, 'Please enter your phone number');
             isValid = false;
-            alert("Phone is required.");
         }
-
-        if (messageInput.value.trim() === "") {
+        
+        // Validate Message
+        const message = document.getElementById('messages');
+        if (message.value.trim() === '') {
+            showError(message, 'Please enter your message');
             isValid = false;
-            alert("Message is required.");
         }
-
-        if (!prefPhoneInput.checked && !prefEmailInput.checked) {
+        
+        // Validate Preferred Contact Method
+        const prefPhone = document.getElementById('pref-phone');
+        const prefEmail = document.getElementById('pref-email');
+        if (!prefPhone.checked && !prefEmail.checked) {
+            showError(prefPhone, 'Please select a preferred contact method');
+            showError(prefEmail, 'Please select a preferred contact method');
             isValid = false;
-            alert("Preferred Contact Method is required.");
         }
-
-        if (!isValid) {
-            event.preventDefault();
-        } else {
-            alert("Form submitted successfully!");
+        
+        if (isValid) {
+            successMessage.classList.remove('hide');
+            successMessage.classList.add('show');
+            
+            // Display form data in the success message
+            formSub.innerHTML = `
+                <strong>Name:</strong> ${name.value.trim()}<br>
+                <strong>Email:</strong> ${email.value.trim()}<br>
+                <strong>Phone:</strong> ${phone.value.trim()}<br>
+                <strong>Message:</strong> ${message.value.trim()}<br>
+                <strong>Preferred Contact Method:</strong> ${prefPhone.checked ? 'Phone' : 'Email'}
+            `;
+            // Clear the form
+            form.reset();
         }
     });
+    
+    function showError(input, message) {
+        input.classList.add('errorInput');
+        const errorMessage = input.nextElementSibling;
+        errorMessage.textContent = message;
+        errorMessage.style.display = 'block';
+    }
+    
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+    }
 });
+
 
 
 
