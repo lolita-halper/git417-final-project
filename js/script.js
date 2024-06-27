@@ -73,20 +73,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Sticky Navigation
-
-$(document).ready(function() {
-    $('.js--section-features').waypoint(function(direction) {
-        if (direction === "down") {
-            $('nav').addClass('sticky');
-        } else {
-            $('nav').removeClass('sticky');
-        }
-    }, {
-        offset: '60px'
-    });
-});
-
 
 // Change Color - light and dark mode for body element
 function toggleBodyColor() {
