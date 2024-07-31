@@ -185,4 +185,3 @@ removeOneItemButton.addEventListener('click', () => {
         updateCartDisplay();
     }
 });
-
